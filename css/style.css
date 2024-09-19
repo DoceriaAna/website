@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    margin: 0 auto;
+    padding: 14px 0;
+    background-color: #d572d7;
+    color: #ecf0f1;
+    border-bottom: 1px solid #000;
+}
+
+/* Definindo e configurando Fonte */
+body, input, textarea{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(255, 251, 255, 0.869);
+    text-align: justify;
+}
+
+header h1,
+section h2,
+section h3,
+form button,
+.navbar{
+    font-weight: normal;
+}
+
+header,
+section h2,
+section h3,
+form button,
+.navbar{
+    font-family: 'Baskerville', sans-serif;
+}
+
+.menu > li{
+    padding: 16px;
+    font-size: 12px;
+    float: left;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65px;
+}
+
+.submenu li{
+    display: block;
+    padding: 6px;
+    background-color: #d572d7;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Ajustes navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+.navbar li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+/* Ajustes conteudo*/
+
+.container{
+    max-width: 60%;
+     /* 1280px */
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 30px 0;
+    color: #e115e4;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+    color: black;
+}
+
+article p{
+    width: 60%;
+}
+
+.container img{
+    width: 20%;
+    border: 9px solid #f0f4ed;
+    border-radius: 9999px;
+}
+
+#menu img{
+    margin-left: 20px;
+}
+
+#guides .container{
+    display: block;
+    width: 100%;
+}
+
+#guides h2{
+    color: #3b0942;
+    font-weight: bold;
+}
+
+#guides .container img{
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 9px solid #f0f4ed;
+    border-radius: 9999px;
+    object-fit: cover;
+
+    display: block;
+}
+
+#guides article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+/* Contatos */
+#contact .container{
+    display: block;
+}
+
+#guides .container h2{
+    text-align: center;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 16px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+.social-links img{
+    height: 3vw;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+/* contatos form */
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 16vw;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #7e1c8b;
+    color: #ecf0f1;
+    border: none;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #de2ae1 ;
+    transition: 1.5s;
+}
+
+input:focus, textarea:focus{
+    outline-color: #d572d7;
+}
+/* Contatos */
+
+footer{
+    background-color: #d572d7;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
